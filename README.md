@@ -1,2 +1,2 @@
 # mini-static-thingy-wingy
-A small setup for little static templates with Twig and PostCSS
+A small setup for little static templates with Twig and PostCSS (work in progress)

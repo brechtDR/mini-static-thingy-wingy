@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Utilitybend",
+    "short_name": "Utilitybend",
     "icons": [
         {
             "src": "/assets/img/icons/android-chrome-192x192.png",
@@ -8,8 +8,8 @@
             "type": "image/png"
         },
         {
-            "src": "/assets/img/icons/android-chrome-512x512.png",
-            "sizes": "512x512",
+            "src": "/assets/img/icons/android-chrome-256x256.png",
+            "sizes": "256x256",
             "type": "image/png"
         }
     ],

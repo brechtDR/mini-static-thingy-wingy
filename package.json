@@ -4,7 +4,7 @@
   "description": "Something i use for small demo's and landingpages",
   "main": "app.js",
   "author": "Brecht De Ruyte <brecht@utilitybend.com> (https://www.utilitybend.com)",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@fullhuman/postcss-purgecss": "^4.0.3",
