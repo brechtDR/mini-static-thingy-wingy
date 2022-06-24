@@ -55,9 +55,10 @@ const config = {
 
             /**** CSS LOADER (convert css with postcss) ****/
             {
-                test: /\.css$/,
+                test: /\.scss$/,
                 exclude: /node_modules/,
-                use: [
+                use: [  
+                    
                     {
                         loader: MiniCssExtractPlugin.loader,
                         options: {
@@ -66,7 +67,19 @@ const config = {
                             publicPath: "./assets/css/",
                         },
                     },
-                    "css-loader",
+
+                    
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: false
+                        }
+                    }, {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: false
+                        }
+                    },
                     "postcss-loader"
                 ],
             },
