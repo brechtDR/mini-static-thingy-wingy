@@ -11,7 +11,7 @@ const   path = require('path'),
         pages = require('./templates.json');
 
 /*** exported css file ***/
-const extractPlugin = new MiniCssExtractPlugin({ filename: './assets/css/style.css' });
+const extractPlugin = new MiniCssExtractPlugin({ filename: './css/style.css' });
 
 /*** html pages loop ***/
 let templatePages = _.map(pages, function(page) {
@@ -31,7 +31,7 @@ const config = {
     output: {
         // Output path using nodeJs path module
         path: path.resolve(__dirname, 'build'), //The build folder
-        filename: './assets/js/website.js' //Where the js should be written to
+        filename: './js/website.js' //Where the js should be written to
     },
     module: {
         rules: [
@@ -60,54 +60,24 @@ const config = {
                 use: [  
                     
                     {
-                        loader: MiniCssExtractPlugin.loader,
-                        options: {
-                            // you can specify a publicPath here
-                            // by default it uses publicPath in webpackOptions.output
-                            publicPath: "./assets/css/",
-                        },
+                        loader: MiniCssExtractPlugin.loader
                     },
 
-                    
                     {
                         loader: 'css-loader',
                         options: {
                             sourceMap: false
                         }
-                    }, {
-                        loader: 'sass-loader',
-                        options: {
-                            sourceMap: false
-                        }
-                    },
+                    }, 
                     "postcss-loader"
                 ],
             },
-            /**** FILE LOADER (copies files) ****/
-            {
-                test: /\.(jpg|png|gif|svg)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[name].[ext]',
-                            outputPath: './assets/img/'
-                        }
-                    }
-                ]
-            },
-            //file-loader(for fonts)
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[name].[ext]',
-                            outputPath: './assets/fonts/'
+                type: "asset/resource",
+                        generator: {
+                            filename: "assets/fonts/[name][ext]"
                         }
-                    }
-                ]
             }
         ]
     },
