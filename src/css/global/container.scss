@@ -1,8 +1,33 @@
+body {
+    color: black;
+    text-align: center;
+    background: radial-gradient(#cfd4c5 20%, transparent 19%),
+    radial-gradient(#eecfd4 20%, #e6adec 19%), #f6fedb;
+    background-size: 1.4vw 1.4vw;
+    background-position: 0 0, 0.7vw 0.7vw;
+}
+
+.logo {
+    display: inline-block;;
+    width: 100px;
+}
+
 .container {
+    position: relative;
+    background: whitesmoke;
     max-width: 800px;
-    margin: 0 auto;
-    h1 {
-        color: white;
+    border: 3px dashed orchid;
+    border-radius: 10px;
+    padding-top: 40px;
+    margin: 100px auto 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    .logo {
+        position: absolute;
+        top: -65px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
+
+
 

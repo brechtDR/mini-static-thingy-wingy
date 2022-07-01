@@ -75,9 +75,9 @@ const config = {
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
                 type: "asset/resource",
-                        generator: {
-                            filename: "assets/fonts/[name][ext]"
-                        }
+                generator: {
+                    filename: "assets/fonts/[name][ext]"
+                }
             }
         ]
     },
