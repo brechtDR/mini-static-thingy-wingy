@@ -1,0 +1,25 @@
+.card {
+    position: relative;
+    background: var(--color-lightest);
+    width: clamp(320px, 90vw, $default-max-bp);
+    border: 3px dashed var(--color-secondary);
+    border-radius: 10px;
+    margin: 100px auto 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    &.has--logo {
+        .card-header {
+            padding-top: clamp(35px, 2.5vw, $default-max-bp);
+            padding-bottom: clamp(35px, 2.5vw, $default-max-bp);
+        }
+    }
+}
+
+.card-header {
+    padding: 2.5vw;
+    background: var(--color-secondary-02);
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    padding: 2.5vw;
+}

@@ -25,8 +25,9 @@
     "postcss-easy-import": "^4.0.0",
     "postcss-loader": "^6.2.0",
     "postcss-scss": "^4.0.4",
+    "raw-loader": "^4.0.2",
     "style-loader": "^3.3.1",
-    "twig-loader": "^0.5.5",
+    "twig-html-loader": "^0.1.9",
     "webpack": "^5.62.2",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.4.0"

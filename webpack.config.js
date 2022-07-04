@@ -50,8 +50,14 @@ const config = {
             /**** HTML LOADER (move html files to folder) ****/
             { test: /\.html$/, use: ['html-loader'] },
 
-            /**** TWIG LOADER (convert twig to html) ****/
-            { test: /\.twig$/, use: ['twig-loader'] },
+
+            {
+                test: /\.twig$/,
+                use: [
+                  'raw-loader',
+                  'twig-html-loader'
+                ]
+              },
 
             /**** CSS LOADER (convert css with postcss) ****/
             {
@@ -97,7 +103,7 @@ const config = {
         },
         open: true, //Opens browser when starting
         port: 5000, //Localhost port
-        compress: true, //Enable gzip compression for everything served
+        compress: false, //Enable gzip compression for everything served
         liveReload: true,
         hot: false
     },

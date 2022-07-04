@@ -1,4 +1,14 @@
-@import "global/fonts";
+@import "global/functions/functions";
 
-@import "global/container";
-@import "global/typography";
+@import "global/fonts";
+@import "global/reboot";
+
+@import "atoms/colors";
+@import "atoms/typography";
+@import "atoms/logo";
+@import "atoms/sr-only";
+
+@import "organisms/card";
+
+
+@import "pages/general-page";   
