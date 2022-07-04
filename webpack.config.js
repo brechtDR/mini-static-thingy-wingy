@@ -8,7 +8,7 @@ const   path = require('path'),
         HtmlWebpackPlugin = require('html-webpack-plugin'), //copies html files
         MiniCssExtractPlugin = require('mini-css-extract-plugin'),
         CopyWebpackPlugin = require('copy-webpack-plugin');
-        pages = require('./templates.json');
+        pages = require('./src/templates.json');
 
 /*** exported css file ***/
 const extractPlugin = new MiniCssExtractPlugin({ filename: './css/style.css' });
