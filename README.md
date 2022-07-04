@@ -1,4 +1,6 @@
-# mini-static-thingy-wingy
+# Mini Static Thingy Wingy
+
+Created with love by [Brecht De Ruyte](https://utilitybend.com/). For fun, and free to use for all.
 
 ## What's it about?
 
