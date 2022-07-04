@@ -4,8 +4,8 @@
       "template": "./templates/index.twig"
     },
     {
-        "filename": "./test/about.html",
-        "template": "./templates/test/about.twig"
+        "filename": "./about.html",
+        "template": "./templates/about.twig"
       }
   ]
   
