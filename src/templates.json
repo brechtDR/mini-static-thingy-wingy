@@ -2,6 +2,10 @@
     {
       "filename": "./index.html",
       "template": "./templates/index.twig"
-    }
+    },
+    {
+        "filename": "./test/about.html",
+        "template": "./templates/test/about.twig"
+      }
   ]
   
