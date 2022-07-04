@@ -4,7 +4,7 @@
     --font-family-mono: "Source Code Pro", monospace;
 
     --font-size-base: #{clamped(15px, 19px)};
-    --line-height-base:  #{clamped(20px, 25px)};
+    --line-height-base:  #{clamped(22px, 27px)};
     --font-size-h1: #{clamped(21px, 40px)};
     --line-height-h1:  #{clamped(23px, 45px)};
     --font-size-h2: #{clamped(18px, 30px)};
@@ -12,14 +12,16 @@
     --font-size-h1-dashes: #{clamped(20px, 30px)};
 }
 
-h1 {
+h1, .h1 {
     display: grid;
     grid-template-rows: 1fr auto 1fr;
     gap: #{clamped(1px, 3px)};
+    margin: 0;
     font-family: var(--font-family-titles);
     font-size: var(--font-size-h1);
     line-height: var(--line-height-h1);
-    letter-spacing: .06em;
+    font-weight: 400;
+    letter-spacing: .02em;
     text-align: center;
     color: var(--color-primary);
     &::before, &::after {
@@ -28,14 +30,24 @@ h1 {
     }
 }
 
-h2 {
+h2, .h2 {
     margin-bottom: .5em;
     font-family: var(--font-family-titles);
-    letter-spacing: .06em;
     font-size: var(--font-size-h2);
     line-height: var(--line-height-h2);
+    font-weight: 400;
+    letter-spacing: .02em;
 }
 
 p {
     margin-bottom: 1.1em;
+}
+
+a, a:link, a:visited {
+    color: var(--color-primary);
+    transition: color .24s;
+}
+
+a:hover, a:active {
+    color: var(--color-secondary);
 }

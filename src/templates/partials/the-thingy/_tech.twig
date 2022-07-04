@@ -1,0 +1,16 @@
+<div class="card">
+	<div class="card-header">
+		<h2 class="h1">Some tech behind it</h2>
+	</div>
+	<div class="card-body">
+        <h3 class="h2">Twig</h3>
+        <p><a href="https://twig.symfony.com/" target="_blank">Twig</a> is a templating language by symfony. It's well known for it's implementations in Craft CMS and Drupal. Twig felt like the right choice for me because firt of all, I'm used to it and second of all, it still feels like writing HTML</p>
+        <p>Twig also makes it easy to set variables for this Mini Static Thingy Wingy since it allows you to pass variables like so:</p>
+        <pre>{{ '{% include "./partials/_navigation.twig", with { active: "home" } %}' }}</pre>
+        <h3 class="h2">PostCSS</h3>
+        <p>I love to play around with <a href="https://postcss.org/" target="_blank">PostCSS</a> and all it has to offer. You can add your own custom packages in the <strong>postcss.config.js</strong> file at the root of the project</p>
+        <p>In the production build, I added the <a href="https://purgecss.com/plugins/postcss.html" target="_blank">purgeCSS</a> and <a href="https://github.com/leodido/postcss-clean" target="_blank">PostCSS Clean</a> plugins, because they make sense to me, but if you'd rather see those go, you can always go into the config file and delete them</p>
+        <h3 class="h2">Pure simple Javascript</h3>
+        <p>Because we want to keep is small and clean, besides... Vanilla JS is a lot of fun</p>
+	</div>
+</div>

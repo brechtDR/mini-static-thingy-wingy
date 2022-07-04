@@ -24,8 +24,7 @@ module.exports = {
                 content: ['./src/templates/**/*.twig'],
                 whitelist: [
                     'active',
-                ],
-                whitelistPatterns: [/js\-/, /badge\-/, /alert\-/],
+                ]
             })
         : null
     ]
