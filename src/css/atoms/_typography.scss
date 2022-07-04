@@ -3,10 +3,10 @@
     --font-family-titles: "Righteous", Helvetica, Arial, sans-serif;
     --font-family-mono: "Source Code Pro", monospace;
 
-    --font-size-base: #{clamped(15px, 20px)};
-    --line-height-base:  #{clamped(24px, 30px)};
-    --font-size-h1: #{clamped(23px, 40px)};
-    --line-height-h1:  #{clamped(25px, 45px)};
+    --font-size-base: #{clamped(15px, 19px)};
+    --line-height-base:  #{clamped(20px, 25px)};
+    --font-size-h1: #{clamped(21px, 40px)};
+    --line-height-h1:  #{clamped(23px, 45px)};
     --font-size-h2: #{clamped(18px, 30px)};
     --line-height-h2:  #{clamped(20px, 34px)};
     --font-size-h1-dashes: #{clamped(20px, 30px)};
@@ -37,5 +37,5 @@ h2 {
 }
 
 p {
-    margin-bottom: .9em;
+    margin-bottom: 1.1em;
 }

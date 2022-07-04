@@ -1,0 +1,29 @@
+<div class="card">
+	<div class="card-header">
+		<h1>How to build</h1>
+	</div>
+	<div class="card-body">
+        <p>Ofcourse, just building one file isn't enough, here are some of the things you can do to build your static website</p>
+		<h2>Creating template files</h2>
+        <p>In the root of your project, you can find a <strong>templates.json</strong> file. When you first open the project, it will look like this:</p>
+        <pre>
+[
+    {
+        "filename": "./index.html",
+        "template": "./templates/index.twig"
+    }
+]</pre>          
+        <p>Whenever you want to create a new html file in your end build, you'll have to add another line. The first line is the output filename, and the second one is the input.</p>
+        <pre>
+[
+    {
+        "filename": "./index.html",
+        "template": "./templates/index.twig"
+    },
+    {
+        "filename": "./my-new-file.html",
+        "template": "./templates/original-new-file.twig"
+    }
+]</pre>     
+	</div>
+</div>

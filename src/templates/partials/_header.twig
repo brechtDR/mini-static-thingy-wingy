@@ -1,17 +1,17 @@
-<nav>
+<nav class="nav-primary">
 	<ul>
 		<li {% if activePage == "index" %} class="active" {% endif %}>
-			<a href="index.html">The basics
+			<a href="index.html">The thingy
 				{% if activePage == "index" %}
 					<span class="sr-only">Current page</span>
 				{% endif %}
 			</a>
 		</li>
-	</li>
-	<li>
-		<a href="tips.html">Tips and tricks</a>
-	</li>
-	<li>
-		<a href="about.html">About me</a>
-	</li>
-</ul></nav>
+		<li {% if activePage == "about" %} class="active" {% endif %}>
+			<a href="about.html">About me</a>
+			{% if activePage == "about" %}
+				<span class="sr-only">Current page</span>
+			{% endif %}
+		</li>
+	</ul>
+</nav>

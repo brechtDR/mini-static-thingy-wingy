@@ -1,8 +1,9 @@
 .logo {
     display: inline-block;;
     width: 100px;
-    position: absolute;
-    top: -65px;
+    position: sticky;
+    top: 5px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
 }
