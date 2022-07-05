@@ -14,7 +14,7 @@ By using Twig as a templating engine and PostCSS + Scss to handle the styling, i
 
 ## How to run it
 
-Make sure you have the lateste node version installed. Simply download the main directory and run:
+Make sure you have the latest node version installed. Simply download the main directory and run:
 
 ```
 npm install
@@ -26,7 +26,7 @@ Now you are ready to build! To start watching you files for changes, run the fol
 npm run dev
 ```
 
-This will start the server and you'll already have a live reload on your index.twig file and your .scss file. In the next part, i'll go a bit more in-depth, but don't worry, it's easy
+This will start the server at localhost:5000 and you'll already have a live reload on your index.twig file and your .scss file. In the next part, i'll go a bit more in-depth, but don't worry, it's easy
 
 When you're happy with your result and want to build this, just add the following command which will create a build folder at the root of you projects, with your HTML, CSS, JS files (and other assets):
 
@@ -34,11 +34,9 @@ When you're happy with your result and want to build this, just add the followin
 npm run build:production
 ```
 
-**Note:** The CSS is automatically injected before the closing of the head tag, whilde JS is automatically added before the closing of the body tag
+**Note:** The CSS is automatically injected before the closing of the head tag, while JS is automatically added before the closing of the body tag.
 
 # How to build
-
-Ofcourse, just building one file isn't enough, here are some of the things you can do to build your static website
 
 ## Creating template files
 
@@ -74,13 +72,13 @@ Whenever you want to create a new html file in your end build, you'll have to ad
 npm run build
 ```
 
-Will build the files without minifying or combining of css. This is a development output.
+Will build the files without minifying or combining CSS. This is a development output.
 
 ```
 npm run watch
 ```
 
-Will build the files without minifying or combining of css and watch for changes, will rebuild on change. This is slower than running the dev server.
+Will build the files without minifying or combining CSS and watch for changes, will rebuild on change. This is slower than running the dev server.
 
 ```
 npm run install:demo
@@ -103,13 +101,13 @@ Twig also makes it easy to set variables for this Mini Static Thingy Wingy since
 
 ## PostCSS
 
-I love to play around with [PostCSS](https://postcss.org/) and all it has to offer. You can add your own custom packages in the **postcss.config.js** file at the root of the project
+I love to play around with [PostCSS](https://postcss.org/) and all it has to offer. You can add your own custom packages in the **postcss.config.js** file at the root of the project.
 
-In the production build, I added the [purgeCSS](https://purgecss.com/plugins/postcss.html) and [PostCSS Clean](https://github.com/leodido/postcss-clean) plugins, because they make sense to me, but if you'd rather see those go, you can always go into the config file and delete them
+In the production build, I added the [purgeCSS](https://purgecss.com/plugins/postcss.html) and [PostCSS Clean](https://github.com/leodido/postcss-clean) plugins, because they make sense to me, but if you'd rather see those go, you can always go into the config file and delete them.
 
 ## Pure simple Javascript
 
-Because we want to keep is small and clean, besides... Vanilla JS is a lot of fun
+Because we want to keep it small and clean, besides... Vanilla JS is a lot of fun. I added Babel and some plugins to make life a bit more easy such as dynamic import and transform runtime.
 
 # Extra tips and tricks
 
@@ -129,7 +127,7 @@ When using subfolders it might get handy to update this variable to a new relati
 
 ## Using translation files
 
-You can upgrade you webpack config to look for translation files in your folder.
+You can upgrade the webpack config file to look for translation files in your folder.
 
 **1. In you webpack, add the following line of code**
 
