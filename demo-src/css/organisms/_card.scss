@@ -1,0 +1,31 @@
+.card {
+    position: relative;
+    background: var(--color-lightest);
+    width: clamp(320px, 90vw, $max-breakpoint);
+    border: 3px dashed var(--color-secondary);
+    border-radius: 10px;
+    margin: 50px auto 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    &.has--logo {
+        margin-top: -40px;
+        .card-header {
+            padding-top: clamp(35px, 2.5vw, $max-breakpoint);
+            padding-bottom: clamp(35px, 2.5vw, $max-breakpoint);
+        }
+    }
+}
+
+.card-header {
+    padding: 2.5vw;
+    background: var(--color-secondary-02);
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    padding: 2.5vw;
+}
+
+.card-footer {
+    padding: 2.5vw;
+    border-top: 2px dashed var(--color-secondary);
+}

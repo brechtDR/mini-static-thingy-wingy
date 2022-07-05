@@ -1,0 +1,22 @@
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    --pattern-size: 20px;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--color-darkest);
+    background: radial-gradient(#cfd4c5 20%, transparent 19%),
+    radial-gradient(#eecfd4 20%, #e6adec 19%), #f6fedb;
+    background-size: var(--pattern-size) var(--pattern-size);
+    background-position: 0 0, calc(var(--pattern-size) / 2) calc(var(--pattern-size) / 2);
+}
+
+.footer {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}

@@ -1,0 +1,17 @@
+/* purgecss start ignore */
+html.dark {
+    --color-lightest: rgb(39, 39, 39);
+    --color-darkest: rgb(245, 245, 245);
+    --color-primary: rgb(218, 112, 214);
+    --color-secondary: rgb(153, 50, 204);
+    --color-secondary-02: rgba(245, 245, 245, 0.1);
+    --code-block-bg: #333;
+    --code-block-color: #f4f4f4;
+    --code-block-border-color: #555;
+    body {
+        background: radial-gradient(#34283a 20%, transparent 19%), radial-gradient(#480035 20%, #290321 19%), #3c2c2c;
+        background-size: var(--pattern-size) var(--pattern-size);
+        background-position: 0 0, calc(var(--pattern-size) / 2) calc(var(--pattern-size) / 2);
+    }
+}
+/* purgecss end ignore */

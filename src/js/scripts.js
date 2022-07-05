@@ -1,0 +1,1 @@
+console.log('--Mini Static Thingy Wingy initiated--')

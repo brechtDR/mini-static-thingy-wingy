@@ -1,0 +1,25 @@
+.toggle-theme {
+    background: none;
+    border: none;
+    cursor: pointer;
+    .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .sun {
+        display: none;
+        color: darkorange;
+    }
+    .moon {
+        color: navy;
+    }
+}
+
+.dark {
+    .moon {
+        display: none;
+    }
+    .sun {
+        display: inline-block;
+    }
+}

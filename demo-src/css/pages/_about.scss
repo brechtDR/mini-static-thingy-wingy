@@ -1,0 +1,19 @@
+.about-info {
+    display: flex;
+    flex-direction: column-reverse;
+    @media screen and (min-width: 600px) {
+        display: grid;
+        grid-template-columns: 1fr 120px;
+        align-items: center;
+        gap: 30px;
+        p {
+            margin: 0;
+        }
+        .profile-image {
+            aspect-ratio: 1 / 1;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}

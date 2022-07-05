@@ -8,7 +8,7 @@ const   path = require('path'),
         HtmlWebpackPlugin = require('html-webpack-plugin'), //copies html files
         MiniCssExtractPlugin = require('mini-css-extract-plugin'),
         CopyWebpackPlugin = require('copy-webpack-plugin');
-        pages = require('./templates.json');
+        pages = require('./src/templates.json');
 
 /*** exported css file ***/
 const extractPlugin = new MiniCssExtractPlugin({ filename: './css/style.css' });
@@ -43,15 +43,22 @@ const config = {
                 use: {
                     loader: "babel-loader", //choose the loader, set the preset to environment. for using ES6 or higher
                     options: {
-                        presets: ['env']
-                    }
+                        presets: ['@babel/preset-env'],
+                        plugins: ['@babel/plugin-transform-runtime','@babel/plugin-syntax-dynamic-import']
+                      }
                 }
             },
             /**** HTML LOADER (move html files to folder) ****/
             { test: /\.html$/, use: ['html-loader'] },
 
-            /**** TWIG LOADER (convert twig to html) ****/
-            { test: /\.twig$/, use: ['twig-loader'] },
+
+            {
+                test: /\.twig$/,
+                use: [
+                  'raw-loader',
+                  'twig-html-loader'
+                ]
+              },
 
             /**** CSS LOADER (convert css with postcss) ****/
             {
@@ -75,9 +82,9 @@ const config = {
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
                 type: "asset/resource",
-                        generator: {
-                            filename: "assets/fonts/[name][ext]"
-                        }
+                generator: {
+                    filename: "assets/fonts/[name][ext]"
+                }
             }
         ]
     },
@@ -97,7 +104,7 @@ const config = {
         },
         open: true, //Opens browser when starting
         port: 5000, //Localhost port
-        compress: true, //Enable gzip compression for everything served
+        compress: false, //Enable gzip compression for everything served
         liveReload: true,
         hot: false
     },

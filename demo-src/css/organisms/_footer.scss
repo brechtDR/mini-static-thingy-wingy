@@ -1,0 +1,18 @@
+.footer {
+    margin-top: 50px;
+    border-top: 3px dashed var(--color-secondary);
+    background: var(--color-lightest);
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    width: clamp(320px, 90vw, $max-breakpoint);
+    padding: 3vw 0;
+    margin: 0 auto;
+    .social-links svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
