@@ -1,0 +1,17 @@
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;    
+    text-align: center;
+    a {
+        display: block;
+        color: var(--color-darkest);
+        &:hover, &:active {
+            color: var(--color-primary);
+        }
+    }
+    svg {
+        width: 35px;
+        height: 35px;
+    }
+}

@@ -9,7 +9,7 @@
         display: flex;
         justify-content: space-between;
         gap: 90px;
-        width: clamp(310px, 90vw, $default-max-bp);
+        width: clamp(310px, 90vw, $max-breakpoint);
         list-style: none;
         margin: 0 auto;
         padding: 0;

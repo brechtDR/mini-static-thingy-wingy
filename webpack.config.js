@@ -43,8 +43,9 @@ const config = {
                 use: {
                     loader: "babel-loader", //choose the loader, set the preset to environment. for using ES6 or higher
                     options: {
-                        presets: ['env']
-                    }
+                        presets: ['@babel/preset-env'],
+                        plugins: ['@babel/plugin-transform-runtime','@babel/plugin-syntax-dynamic-import']
+                      }
                 }
             },
             /**** HTML LOADER (move html files to folder) ****/

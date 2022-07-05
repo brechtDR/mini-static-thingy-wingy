@@ -1,1 +1,1 @@
-console.log('---Mini Static Thingy Wingy---')
+console.log('--Mini Static Thingy Wingy initiated--')

@@ -1,5 +1,8 @@
 @use 'sass:math';
 
+$min-breakpoint: 320px;
+$max-breakpoint: 960px;
+
 @function rnd($number, $places: 0) {
     $n: 1;
     @if $places > 0 {
@@ -15,7 +18,7 @@
     @return $rems;
 }
 
-@function clamped($min-px, $max-px, $min-bp: $default-min-bp, $max-bp: $default-max-bp) {
+@function clamped($min-px, $max-px, $min-bp: $min-breakpoint, $max-bp: $max-breakpoint) {
     $slope: math.div($max-px - $min-px, $max-bp - $min-bp);
     $slope-vw: rnd($slope * 100, 2);
     $intercept-rems: rnd(to-rems($min-px - $slope * $min-bp), 2);

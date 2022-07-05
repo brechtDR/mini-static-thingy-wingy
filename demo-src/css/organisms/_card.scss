@@ -1,7 +1,7 @@
 .card {
     position: relative;
     background: var(--color-lightest);
-    width: clamp(320px, 90vw, $default-max-bp);
+    width: clamp(320px, 90vw, $max-breakpoint);
     border: 3px dashed var(--color-secondary);
     border-radius: 10px;
     margin: 50px auto 0;
@@ -9,8 +9,8 @@
     &.has--logo {
         margin-top: -40px;
         .card-header {
-            padding-top: clamp(35px, 2.5vw, $default-max-bp);
-            padding-bottom: clamp(35px, 2.5vw, $default-max-bp);
+            padding-top: clamp(35px, 2.5vw, $max-breakpoint);
+            padding-bottom: clamp(35px, 2.5vw, $max-breakpoint);
         }
     }
 }
@@ -23,4 +23,9 @@
 
 .card-body {
     padding: 2.5vw;
+}
+
+.card-footer {
+    padding: 2.5vw;
+    border-top: 2px dashed var(--color-secondary);
 }
