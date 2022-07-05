@@ -10,7 +10,7 @@ In a world full of frameworks, packages and guidelines, it's sometimes a bit of 
 
 The Mini Static Thingy Wingy was created with just one thing in mind: An easy setup for a simple HTML and CSS driven page. This could be a landing page, a small demo, or an HTML presentation.
 
-By using Twig as a templating engine and PostCSS + Scss to handle the styling, it's a very simple setup. The Thingy is not ment to be _the next new thing_, it's ment to be mini, and static, to create something on the fly (wing it).
+By using Twig as a templating engine and PostCSS + Scss to handle the styling, it's a very simple setup. The Thingy is not meant to be _the next new thing_, it's meant to be mini, and static, to create something on the fly (wing it).
 
 ## How to run it
 
