@@ -1,7 +1,7 @@
 {
   "name": "Mini-Static-Thingy-Wingy",
   "version": "1.0.0",
-  "description": "Something i use for small demo's and landingpages",
+  "description": "Sometimes you don't want a big framework, but a Mini Static Thingy Wingy",
   "main": "app.js",
   "author": "Brecht De Ruyte <brecht@utilitybend.com> (https://www.utilitybend.com)",
   "license": "UNLICENSED",
