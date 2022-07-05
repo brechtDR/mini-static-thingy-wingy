@@ -13,12 +13,16 @@
 		<pre>{{ '{% set assets = "../assets/" %}' }}</pre>
 		<h3 class="h2">Using translation files</h3>
 		<p>You can upgrade the webpack config file to look for translation files in your folder.</p>
-		<p>1. In you webpack, add the following line of code</p>
+		<p>
+			<strong>1. In you webpack, add the following line of code:</strong>
+		</p>
 		<pre>let templatePages = _.map(pages, function(page) {
 //new line of code below
 let translation = require(path.resolve(__dirname, "src")+'/translations/lang.'+page.lang+'.json');			
 //...</pre>
-		<p>2. When creating a template add a language parameter for example:</p>
+		<p>
+			<strong>2. When creating a template add a language parameter for example:</strong>
+		</p>
 		<pre>
 [
     {
@@ -32,24 +36,31 @@ let translation = require(path.resolve(__dirname, "src")+'/translations/lang.'+p
 	"lang": "fr"
     }
 ]</pre>
-		<p>Now we will create two pages from the same template, which will look at a different translation file (eg:lang.fr.json and lang.en.json)</p>
-		<p>3. Let's create those two translation files in
-			<strong>src/translations</strong>
-			and add a translation with the same key.</p>
-		<strong>in translations/lang.en.json</strong>
-		<pre>{
+		<p>Now we will create two pages from the same template, which will look at a different translation file (eg:lang.fr.json and lang.en.json).</p>
+		<p>
+			<strong>3. Let's create those two translation files in
+				<em>src/translations</em>
+				and add a translation with the same key.</p>
+			<em>in translations/lang.en.json:</em>
+		</p>
+	</strong>
+	<pre>{
   "hello": "Hello world"
 }</pre>
-		<strong>in translations/lang.fr.json</strong>
-		<pre>{
+	<strong>in translations/lang.fr.json:</strong>
+	<pre>{
   "hello": "Bonjour le monde"
 }</pre>
-		<p>4. In our
-			<strong>_base.twig</strong>
-			template, we can now set a global variable</p>
-		<pre>{{'{% set t =  htmlWebpackPlugin.options.trans %}'}}</pre>
-		<p>5. And in our extended templates we can just refer to those variables as such</p>
-		<pre>{{ '{{ t.hello }}' }}</pre>
+	<p>
+		<strong>4. In our
+			<em>_base.twig</em>
+			template, we can now set a global variable:</strong>
+	</p>
+	<pre>{{'{% set t =  htmlWebpackPlugin.options.trans %}'}}</pre>
+	<p>
+		<strong>5. And in our extended templates we can just refer to those variables as such:</strong>
+	</p>
+	<pre>{{ '{{ t.hello }}' }}</pre>
 		<p>You should now get an output with different files in different languages, using the same base template.</p>
 	</div>
 </div>

@@ -26,7 +26,7 @@ Now you are ready to build! To start watching you files for changes, run the fol
 npm run dev
 ```
 
-This will start the server at localhost:5000 and you'll already have a live reload on your index.twig file and your .scss file. In the next part, i'll go a bit more in-depth, but don't worry, it's easy
+This will start the server at localhost:5000 and you'll already have a live reload on your index.twig file and your .scss file. In the next part, i'll go a bit more in-depth, but don't worry, it's easy...
 
 When you're happy with your result and want to build this, just add the following command which will create a build folder at the root of you projects, with your HTML, CSS, JS files (and other assets):
 
@@ -129,7 +129,7 @@ When using subfolders it might get handy to update this variable to a new relati
 
 You can upgrade the webpack config file to look for translation files in your folder.
 
-**1. In you webpack, add the following line of code**
+**1. In you webpack, add the following line of code:**
 
 ```
 let templatePages = _.map(pages, function(page) {
@@ -155,11 +155,11 @@ let translation = require(path.resolve(__dirname, "src")+'/translations/lang.'+p
 ]
 ```
 
-Now we will create two pages from the same template, which will look at a different translation file (eg:lang.fr.json and lang.en.json)
+Now we will create two pages from the same template, which will look at a different translation file (eg:lang.fr.json and lang.en.json).
 
 **3. Let's create those two translation files in src/translations and add a translation with the same key.**
 
-**in translations/lang.en.json**
+**in translations/lang.en.json:**
 
 ```
 {
@@ -167,7 +167,7 @@ Now we will create two pages from the same template, which will look at a differ
 }
 ```
 
-**in translations/lang.fr.json**
+**in translations/lang.fr.json:**
 
 ```
 {
@@ -175,13 +175,13 @@ Now we will create two pages from the same template, which will look at a differ
 }
 ```
 
-**4. In our \_base.twig template, we can now set a global variable**
+**4. In our \_base.twig template, we can now set a global variable:**
 
 ```
 {% set t =  htmlWebpackPlugin.options.trans %}
 ```
 
-**5. And in our extended templates we can just refer to those variables as such**
+**5. And in our extended templates we can just refer to those variables as such:**
 
 ```
 {{ t.hello }}
