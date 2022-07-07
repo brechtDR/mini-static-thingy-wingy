@@ -91,7 +91,7 @@ This will install some demo files with examples and start the server.
 
 ## Twig
 
-[Twig](https://twig.symfony.com/) is a templating language by symfony. It's well known for it's implementations in Craft CMS and Drupal. Twig felt like the right choice for me because firt of all, I'm used to it and second of all, it still feels like writing HTML
+[Twig](https://twig.symfony.com/) is a templating language by symfony. It's well known for it's implementations in Craft CMS and Drupal. Twig felt like the right choice for me because first of all, I'm used to it and second of all, it still feels like writing HTML
 
 Twig also makes it easy to set variables for this Mini Static Thingy Wingy since it allows you to pass variables like so:
 
