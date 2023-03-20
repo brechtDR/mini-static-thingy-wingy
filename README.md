@@ -4,8 +4,6 @@ Created with love by [Brecht De Ruyte](https://utilitybend.com/). For fun, and f
 
 ## What's it about?
 
-[Find the demo page here](https://thingywingy.utilitybend.com/)
-
 In a world full of frameworks, packages and guidelines, it's sometimes a bit of an overkill to use all of these frameworks. Sometimes you just want to create a simple page or a sandbox to play in.
 
 The Mini Static Thingy Wingy was created with just one thing in mind: An easy setup for a simple HTML and CSS driven page. This could be a landing page, a small demo, or an HTML presentation.
